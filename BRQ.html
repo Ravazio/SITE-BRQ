@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BRQ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="imagens/brq-logo-230x230.jpg[1].png">
+<script src="jquery-3.2.1.min.js"></script>
+<script src="BRQ-Script.js"></script>
+<link rel="stylesheet" href="BRQ-Estilo.css">
+<link rel="stylesheet" href="style.css">
+<script>
+
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
+</head>
+
+<body style="background-color: #1c5592; margin-right: 0; margin-bottom: 0;">
+   
+<div id="mySidenav" class="sidenav"> 
+  <a href="#inicio">
+  <div id="logo-barra">
+    <img class="bottom" src="imagens/brq_logo-branco.png" alt="logo brq">
+    <img class="top" src="imagens/brq_logo-laranja.png" alt="logo brq">  
+  </div>
+  </a>
+  <p style="padding-top: 170px;">Paixão em tranformar</p>
+  <p style="padding-bottom: 150px; ">negócios em tecnologia</p>
+  <a href="#empresa">Empresa</a>
+  <img id="linha" src="imagens/linha.png" alt="linha">
+  <a href="#desenvolvedores">Desenvolvedores</a>
+  <img id="linha" src="imagens/linha.png" alt="linha">
+  <a href="#projeto">Projeto</a>
+  <img id="linha" src="imagens/linha.png" alt="linha">
+  <a href="#fases">Fases</a>
+  <img id="linha" src="imagens/linha.png" alt="linha">
+  <a href="#contato">Contato</a>
+</div>
+<div class="main">
+
+  <div id="inicio">
+    <br><br><br>
+    <img id="apresentacao" src="imagens/apresentacao.png" alt="brq">
+  </div>
+
+  <div id="empresa">
+  <h1>A EMPRESA</h1>
+    <div class="box orange" style="margin-left: 132px">
+    <p>Paixão por transformar negócios com tecnologia, esse é o propósito que move a BRQ há 24 anos.
+      Com soluções digitais próprias e customizadas, 
+      a BRQ acelera a transformação digital das maiores empresas que operam no Brasil.</p>
+    </div>
+      <video id="video-empresa" width: "1300px" height: "130px" autoplay="autoplay" muted loop="loop">
+              <source src="videos/Aniversário BRQ 24 anos.mp4" type="video/mp4">
+      </video>
+  </div>
+
+<div class="hr"><hr /></div>
+
+<div id="desenvolvedores">
+  <h1>DESENVOLVEDORES</h1>
+  <div class="box-blue">
+    <p>O projeto do quarto termo do SENAI de Informática possibilita aos alunos desenvolverem softwares prontos para o
+      mercado profissional e experiência em equipe. 
+      Os integrantes da equipe responsável pelo projeto da BRQ trabalharam em conjunto para concluir o seu aplicativo durante 4 meses,
+      cada um com uma especificação no desenvolvimento da aplicação.
+    </p>
+  </div>
+  <div class="gallery cf">
+  <div>
+    <img src="imagens/611D21BE-6087-4947-B54A-A725413AE20D.jpeg"/>
+  </div>
+  <div>
+    <img src="imagens/A9E1FC9E-1A34-4D2B-AC26-B6A9140B9A22.jpeg"/>
+  </div>
+  <div>
+    <img src="imagens/C1CEAFE6-C6A0-49D2-B7CF-74E6A52038C9.jpeg"/>
+  </div>
+  <div>
+    <img src="imagens/8E0E8DAC-58CF-4487-8AD5-E22BCA6F975B.jpeg" />
+  </div>
+</div>
+<div id="cara">
+<div class="gallery-dois tooltip"  style="position: relative; margin-top: 53em; margin-left: 5em;">
+  <span class="tooltiptext">Clique para saber mais</span>
+  <a target="_self" href="desenvolvedores/erick.html">
+    <img src="imagens/erick.jpg" alt="erick" width="300" height="200">
+  </a>
+  <div class="desc" style = "color: white; font-family: Comic Sans MS;">ERICK YUJI HARADA</div>
+</div>
+
+<div class="gallery-dois tooltip" style="position: relative; margin-top: 53em;">
+  <span class="tooltiptext">Clique para saber mais</span> 
+  <a target="_self" href="desenvolvedores/gabriel.html">
+    <img src="imagens/gabriel.jpg" alt="gabriel" width="300" height="200">
+  </a>
+  <div class="desc" style = "color: white; font-family: Comic Sans MS;">GABRIEL FERREIRA</div>
+</div>
+
+<div class="gallery-dois tooltip" style="position: relative; margin-top: 53em;">
+  <span class="tooltiptext">Clique para saber mais</span>
+  <a target="_self" href="desenvolvedores/gabi.html">
+    <img src="imagens/gabriela.jpg" alt="gabriela" width="300" height="200">
+  </a>
+  <div class="desc" style = "color: white; font-family: Comic Sans MS;">GABRIELA CAVALCANTE</div>
+</div>
+
+<div class="gallery-dois tooltip" style="position: relative; margin-top: 53em;">
+  <span class="tooltiptext">Clique para saber mais</span>
+  <a target="_self" href="desenvolvedores/ju.html">
+    <img src="imagens/juliana.jpg" alt="juliana" width="300" height="200">
+  </a>
+  <div class="desc" style = "color: white; font-family: Comic Sans MS;">JULIANA BRITO</div>
+</div>
+
+<div class="gallery-dois tooltip" style="position: relative; margin-top: 53em;">
+  <span class="tooltiptext">Clique para saber mais</span>
+  <a target="_self" href="desenvolvedores/sarah.html">
+    <img src="imagens/sarah.jpg" alt="sarah" width="300" height="200">
+  </a>
+  <div class="desc" style = "color: white; font-family: Comic Sans MS;">SARAH SOUZA DUARTE</div>
+</div>
+
+<div class="gallery-dois tooltip" style="position: relative; margin-top: 53em;">
+  <span class="tooltiptext">Clique para saber mais</span>
+  <a target="_self" href="desenvolvedores/vitor.html">
+    <img src="imagens/vitor.jpg" alt="vitor" width="300" height="200">
+  </a>
+  <div class="desc" style = "color: white; font-family: Comic Sans MS;">VITOR PASSOS</div>
+</div>
+</div>
+</div>
+<div class="hr" style="margin-top: 75em;"><hr /></div>
+
+<div id="projeto" style="padding-left: 120px;">
+  <h1>O PROJETO</h1>
+  <p>O objetivo da plataforma WEB é um sistema de retrospectiva baseado na metodologia SCRUM. No sistema haverá três tipos de permissões: administrador, 
+    líder e usuário.</p>
+    
+    <p>O administrador efetua o cadastro de projetos e determina quem serão os líderes de cada projeto, 
+    podendo ter assim um bom controle do sistema. A função do líder no sistema é cadastrar novas Sprints e selecionar o time e setor dos usuários. 
+    Já o usuário consegue votar e comentar as tarefas de cada Sprint comentando as positivas e negativas. </p>
+
+  <p>O objetivo da plataforma MOBILE é estar integrado ao sistema WEB, porém é necessário estar cadastrado para logar no aplicativo e poder utilizá-lo.</p>
+  <img class="bottom" src="imagens/projeto.png" alt="monitor e celular" style="width: 40%; margin-top: 60px;" />
+  <div id="projetos-phone">
+    <img class="sprints" src="imagens/sprints.png" alt="sprints" style="position: absolute; z-index: 3; width: 17.2%; margin-top: -45.7%; left: 112%;"/>
+    <img class="lider" src="imagens/adm.png" alt="menu" style="position: absolute; z-index: 3; width: 17.2%; margin-top: -45.7%; left: 112%;"/>
+    <img class="interface" src="imagens/perfilUsuariosAdm.png" alt="interface" style="position: absolute; z-index: 3; width: 17.2%; margin-top: -45.7%; left: 112%;"/>
+  </div>
+  <div id="projetos-pc">
+    <img class="pins" src="imagens/pins.png" alt="sprints" style="position: absolute; z-index: 3; width: 71%; margin-top: -61.7%; left: 115.4%;"/>
+  </div>
+</div>
+
+<div class="hr"><hr /></div>
+
+<div id="fases">
+  <h1>FASES DE PRODUÇÃO</h1>
+  <p>Quando um projeto é desenvolvido é necessário a realização de várias etapas, para uma melhor organização e para uma boa conclusão futura. 
+    Para se concluir um projeto com êxito, deve se trabalhar visando a eficiência e excelência para dessa maneira se obter o resultado mais próximo do desejado. 
+    Seguir o que for planejado servirá como um guia para passar por cada fase que serão detalhadas a seguir visando a obtenção do sucesso.</p>
+
+
+    
+
+<div class="container">
+	
+	<div class="timeline-item" date-is='1°'>
+		<h1>Iniciação</h1>
+		<p> 
+      Essa fase do projeto é primordial nela conseguimos ter uma visão ampliada do projeto todo. Ela é bastante destacada pela formação das equipes, 
+       e é necessário compreender o que foi solicitado e efetuar o 
+      esclarecimento de todas as dúvidas.
+		</p>
+    <img src="imagens/iniciacao.jpg" alt="iniciação" style="width: 75%; margin-left: 140px;"/>
+	</div>
+	
+	<div class="timeline-item" date-is='2°'>
+		<h1>Planejamento</h1>
+		<p>
+			O planejamento do projeto é feito para melhorar a organização, nesse processo é apresentado um cronograma com datas, 
+      prazos e a função que cada membro irá executar, ele deve ser atualizado para as informações serem designadas e o 
+      projeto ser desenvolvido e entregue dentro do prazo.
+		</p>
+    <img src="imagens/planejamento.jpg" alt="planejamento" style="width: 75%; margin-left: 140px;"/>
+	</div>
+	
+	<div class="timeline-item" date-is='3°'>
+		<h1>Execução</h1>
+		<p>
+			A etapa de execução tem extrema importância, nela acontece tudo o que já foi planejado, discutido e esclarecido é 
+      onde tudo o que já foi feito é posto em pratica,
+       assim acontece o desenvolvimento do que foi solicitado no escopo seguindo todos os requisitos apresentados. 
+       É necessário também cumprir as datas, 
+       prazos e efetuar a atualização do progresso de desenvolvimento.
+		</p>
+    <img src="imagens/execução.jpg" alt="execução" style="width: 75%; margin-left: 140px;"/>
+	</div>
+
+  <div class="timeline-item" date-is='4°'>
+		<h1>Monitoramento e Controle</h1>
+		<p>
+			O Monitoramento e Controle são essenciais, pois através deles podemos obter o relatório de andamento do projeto,
+       monitorando assim se tudo está acontecendo como o planejado, 
+      se o escopo está sendo atendido e se todos os requisitos solicitados estão também sendo atendidos. 
+      Assim com o monitoramento e controle em ordem podemos prosseguir para a finalização do projeto.
+		</p>
+    <img src="imagens/monitoramento.jpg" alt="monitoramento" style="width: 75%; margin-left: 140px;"/>
+	</div>
+
+  <div class="timeline-item" date-is='5°'>
+		<h1>Finalização</h1>
+		<p>
+		Chegando ao final do projeto após decorrer por todas as fases do projeto é necessário finalizar a documentação, 
+    ajustar tudo o que for necessário para a entrega e realizar a apresentação.
+		</p>
+    <img src="imagens/finalização.jpg" alt="finalização" style="width: 75%; margin-left: 140px;"/>
+	</div>
+	
+</div>
+</div>
+
+<div class="hr"><hr /></div>
+
+<div id="contato" style="padding-left: 160px;">
+  <a href="http://www.brq.com/"  target="_blank">
+    <div class="boxbrq" style="margin-left: 132px">
+      <img src="imagens/logo.png" style="width: 200px;margin-left: 404px;margin-top: 15px;"/>
+    <p>Visite nosso site!</p>
+    </div>
+  </a>
+
+  <a href="https://twitter.com/brqitservices"  target="_blank">
+    <div class="boxtwt" style="margin-left: 132px;margin-top: 29px;">
+      <img src="imagens/twt.png" style="width: 151px;margin-left: 150px;margin-top: -20px;margin-right: 126px;"/>
+    <p>Siga no Twitter!</p>
+    </div>
+  </a>
+
+  <a href="https://www.youtube.com/user/brqitservices"  target="_blank">
+  <div class="boxyt" style="margin-left: 66px;margin-top: 29px;">
+    <img src="imagens/yt.png" style="width: 186px;margin-left: 143px;margin-top: -35px;">
+    <p>Se inscreva no canal!</p>
+  </div>
+</a>
+
+  <a href="https://pt-br.facebook.com/brqitservices/"  target="_blank">
+  <div class="boxface" style="margin-left: 136px;margin-top: 29px;">
+    <img src="imagens/face.png" style="width: 155px;margin-left: 149px;margin-top: -21px;">
+    <p>Curta nossa página!</p>
+  </div>
+</a>
+
+  <a href="https://br.linkedin.com/company/brq"  target="_blank">
+  <div class="boxln" style="margin-left: 69px;margin-top: 29px;">
+    <img src="imagens/in.png" style="width: 136px;margin-left: 164px;margin-top: -6px;">
+    <p>Visite nosso linkedin!</p>
+  </div>
+</a>
+</div>
+ <footer>
+	    	<div id="rodape">
+	    	<img id="logo-rodape" src="imagens/logo.png" alt="logo">
+                <p>© 2017 BRQ | brq@brq.com</p>
+				<p style="padding-bottom: 2em; margin-bottom: 0">Todos os direitos reservados.</p>
+				<p id="autor">@Authors: Victor Ravazio de Lima & Lucas Silveira Portal</p>
+        </div>
+	    </footer>
+
+
+</div>
+
+</div>
+</body>
+</html>
